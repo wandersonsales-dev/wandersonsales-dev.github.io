@@ -1,0 +1,31 @@
+body {
+  background-color: #e9e9e9;
+}
+
+.especial-fonts {
+  font-family: 'Roboto';
+}
+
+em, strong {
+  color: #372554;
+}
+
+.skill1 {
+  font-size: 10px;
+}
+
+.skill2 {
+  font-size: 15px;
+}
+
+.skill3 {
+  font-size: 20px;
+}
+
+.skill4 {
+  font-size: 25px;
+}
+
+.skill5 {
+  font-size: 30px;
+}
