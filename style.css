@@ -87,6 +87,15 @@ body {
   float: left;
 }
 
+.card a {
+  color: black;
+  font-weight: 300;
+}
+
+.card a:visited {
+  color: black;
+}
+
 .card:hover {
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
