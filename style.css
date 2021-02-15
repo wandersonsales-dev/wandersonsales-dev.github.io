@@ -132,3 +132,18 @@ body {
   color: white;
 }
 
+#footer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:visited {
+  color: white
+}
