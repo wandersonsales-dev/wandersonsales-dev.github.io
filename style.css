@@ -121,7 +121,7 @@ body {
   height: 400px;
   margin: 0 auto;
   margin-top: 40px;
-  margin-left: 150px;
+  display: block;
 }
 
 #section-bottom a:visited {
