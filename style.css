@@ -48,8 +48,9 @@ body {
   border-radius: 6px;
   box-shadow: 0.3em 0.3em rgb(51, 51, 51, 0.4);
 }
+
 #description:hover {
-  background-color: ;
+  background-color: rgb(240, 240, 240);
 }
 
 #description p {
