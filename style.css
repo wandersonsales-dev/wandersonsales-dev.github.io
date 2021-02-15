@@ -124,6 +124,10 @@ body {
   display: block;
 }
 
+#section-bottom a {
+  color: white;
+}
+
 #section-bottom a:visited {
   color: white;
 }
