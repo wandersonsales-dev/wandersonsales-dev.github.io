@@ -1,0 +1,130 @@
+body {
+  background: linear-gradient(
+  to right, rgb(106, 48, 147), rgb(160, 68, 255));
+  color: white;
+  font-family: 'Roboto';
+}
+
+#title {
+  text-align: center;
+  text-shadow: 0.1em 0.1em #333;
+  margin-top: 50px;
+}
+
+#zoom {
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#zoom img {
+  max-width: 200px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 50px;
+}
+
+#zoom:hover img {
+  -moz-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+#profile {
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  border-radius: 100%;
+  box-shadow: 0.1em 0.1em rgb(51, 51, 51, 0.4);
+}
+
+#description {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0.3em 0.3em rgb(51, 51, 51, 0.4);
+}
+#description:hover {
+  background-color: ;
+}
+
+#description p {
+  padding: 10px 10px;
+  color: black;
+  text-align: center;
+}
+
+#center {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+#cards {
+  max-width: 600px;
+  height: 100%;
+  display: inline-block;
+  padding-left: 60px;
+}
+
+.card {
+  width: 220px;
+  height: 200px;
+  margin: 10px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(234,249,249,0.67) 0.1%,
+    rgba(239,249,251,0.63) 90.1% );
+  border-radius: 8px;
+  /* margin-left: 50px; */
+  box-shadow: 0.3em 0.3em rgb(51, 51, 51, 0.4);
+  float: left;
+}
+
+.card:hover {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(234,249,249,0.67) 0.1%,
+    rgba(224, 224, 224, 0.63) 90.1% );
+}
+
+.card h3 {
+  padding-top: 20px;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+
+.card ul {
+  margin-left: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.card ul li {
+  color: black;
+  font-weight: 300;
+
+}
+
+.card a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#section-bottom {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+#section-bottom a:visited {
+  color: white;
+}
+
