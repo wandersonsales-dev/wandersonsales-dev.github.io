@@ -1,0 +1,145 @@
+:root {
+
+  --color-bg: rgb(26 , 26 , 26);
+
+  --color-header: rgb(255 , 102 , 0);
+
+  --color-enmphasys: rgb(153 , 209 , 156);
+
+  --color-destak: rgb(121 , 199 , 197);
+
+  --color-clean: rgb(173 , 225 , 229);
+
+  --color-ice: rgb(243 , 243 , 243);
+
+  --color-bg-img: white;
+
+  --color-border-img: black;
+
+  --color-fire: red;
+
+  --color-water: blue;
+
+  --color-earth: brown;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-ice);
+}
+
+#content {
+  max-width: 1180px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  font-family: Ranchers, cursive;
+}
+
+#border-bottom {
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#border-bottom-right {
+  width: 30%;
+  height: 100%;
+  background-color: var(--color-header);
+}
+
+header span {
+  color: var(--color-header);
+}
+
+main {
+  width: 50%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid var(--color-bg);
+  margin: 40px auto;
+}
+
+#meme-image-container {
+  max-width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  background-color: var(--color-bg-img);
+  border: 1px solid var(--color-border-img);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+#text-input {
+  width: 50%;
+}
+
+#meme-text {
+  width: 90%;
+  height: auto;
+  left: 5%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  font-family: Ranchers, cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--color-bg-img);
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+}
+
+#control-panel {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#control-panel button {
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-bg-img);
+  outline: none;
+}
+
+#readyMemes {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#readyMemes img {
+  width: 70px;
+  height: 100px;
+  border: 3px solid var(--color-bg);
+}
