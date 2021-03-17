@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Projeto Todo List</title>
 </head>
 <body>
-    <header id="titulo">
+    <header class="title" id="titulo">
       <div id="contentHeader">
         <h1>Minha Lista de Tarefas</h1>
       </div>
@@ -16,25 +21,31 @@
     <div id="content">
       <main>
         <section>
-          <h2 id="info">Sua lista de tarefas</h2>
+          <h2 id="info" class="subtitle">Sua lista de tarefas</h2>
           <span id="funcionamento">
-            Clique duas vezes em um item para marcá-lo como completo
+            * Clique duas vezes em um item para marcá-lo como completo
           </span>
         </section>
         <section id="search">
-          <input type="text" id="texto-tarefa">
-          <button id="criar-tarefa">Add</button>
+          <div class="field is-grouped">
+            <div class="control is-expanded">
+              <input class="input is-focused" autofocus type="text" id="texto-tarefa">
+            </div>
+            <div class="control">
+              <button class="button is-dark" id="criar-tarefa">Add</button>
+            </div>
+          </div>
         </section>
         <section id="container-list">
           <ol id="lista-tarefas"></ol>
         </section>
         <section id="controlPanel">
-          <button id="remover-selecionado">&#10005;</button>
-          <button id="apaga-tudo">Limpar lista</button>
-          <button id="mover-cima">&#8593;</button>
-          <button id="mover-baixo">&#8595;</button>
-          <button id="remover-finalizados">Limpar completos</button>
-          <button id="salvar-tarefas">Salvar</button>
+          <button class="button is-normal is-danger is-outlined" id="remover-selecionado">&#10005;</button>
+          <button class="button is-normal is-danger" id="apaga-tudo">Limpar lista</button>
+          <button class="button is-normal is-outlined" id="mover-cima">&#8679;</button>
+          <button class="button is-normal is-outlined" id="mover-baixo">&#8681;</button>
+          <button class="button is-normal is-danger is-outlined" id="remover-finalizados">Limpar completos</button>
+          <button class="button is-normal is-info" id="salvar-tarefas">Salvar</button>
         </section>
       </main>
     </div>

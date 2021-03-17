@@ -1,6 +1,6 @@
 :root {
 
-  --bg-background: rgb(190 , 183 , 164);
+  --bg-background: rgb(216, 216, 216);
 
   --bg-title: rgb(255 , 127 , 17);
 
@@ -24,6 +24,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--bg-background);
+  height: 100vh;
 }
 
 #content {
@@ -36,15 +37,16 @@ body {
 main {
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding: 50px;
   background-color: var(--bg-main);
-  border-radius: 25px;
+  border-radius: 0 50px;
 }
 
 #titulo {
   font-weight: 600;
   background-color: var(--bg-title);
   border-bottom: 1px solid var(--border-bottom-title);
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 #contentHeader {
@@ -83,6 +85,10 @@ main {
   font-weight: 600;
 }
 
+#mover-cima, #mover-baixo {
+  font-weight: bolder;
+}
+
 #controlPanel {
   width: 100%;
   height: auto;
@@ -95,4 +101,8 @@ main {
 #controlPanel button {
   margin: 0 10px;
   padding: 3px 5px;
+}
+
+#controlPanel .button {
+  padding: 5px 20px;
 }
