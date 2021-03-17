@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Projeto Carta Misteriosa</title>
 </head>
@@ -11,8 +12,14 @@
   <div id="content">
     <main>
       <div id="enter-value">
-        <input type="text" id="carta-texto" />
-        <button id="criar-carta">Criar carta</button>
+        <div class="field">
+          <div class="control">
+            <input class="input is-focused" type="text" id="carta-texto" placeholder="Digite alguma frase..." />
+            <button class="button is-success" id="criar-carta">Criar carta</button>
+          </div>
+        </div>
+        
+        
       </div>
       <p id="carta-gerada"></p>
       <div id="contador">

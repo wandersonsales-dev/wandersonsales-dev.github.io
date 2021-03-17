@@ -44,7 +44,7 @@ const generate = () => {
     newSpan.addEventListener('click', generateClass);
     showResult.appendChild(newSpan);
   }
-  idCartaContador.innerHTML = inputSplited.length;
+  idCartaContador.innerHTML = `A frase possui <strong>${inputSplited.length}</strong> palavras.`;
   generateClassAlternative();
 };
 

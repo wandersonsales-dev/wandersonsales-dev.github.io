@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #content {
   max-width: 1280px;
+  width: 100%;
   height : auto;
   padding: 10px;
   margin: 0 auto;
@@ -41,6 +51,7 @@ main {
   width: 100%;
   height: auto;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 #carta-gerada span {
@@ -107,8 +118,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #carta-contador {
   text-align: center;
+  word-wrap: normal;
+}
+
+@media (max-width: 500px) {
+  #carta-texto {
+    width: 50%;
+  }
+
+  #criar-carta {
+    width: 40%;
+  }
 }
