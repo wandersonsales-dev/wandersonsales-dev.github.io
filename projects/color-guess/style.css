@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#content {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+}
+
 #title {
   text-align: center;
 }
@@ -45,6 +58,11 @@
   align-items: center;
 }
 
+#answer {
+  font-size: 25px;
+  text-align: center;
+}
+
 #controlPanel {
   width: 50%;
   height: auto;
@@ -67,4 +85,13 @@
 
 #score {
   display: inline;
+}
+
+@media (max-width: 500px) {
+  .ball {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 100%;
+  }
 }
