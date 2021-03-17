@@ -18,7 +18,7 @@
 #content {
   max-width: 1366px;
   height: auto;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 #title {
@@ -39,6 +39,7 @@ main {
   align-items: center;
   flex-wrap: nowrap;
   background-color: var(--background-palette);
+  border-radius: 20px;
 }
 
 .color {
@@ -48,6 +49,7 @@ main {
   border: 1px solid var(--border-color);
   max-width: 150px;
   max-height: 150px;
+  border-radius: 50%;
 }
 
 .selected {
@@ -55,6 +57,8 @@ main {
 }
 
 #pixel-board {
+  max-width: 100%;
+  width: 100%;
   height: auto;
   padding: 20px 10px;
   margin: 0 auto;

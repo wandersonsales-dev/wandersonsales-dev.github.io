@@ -72,6 +72,13 @@ function paintPixel() {
   }
 }
 
+function sizePixel(grid) {
+  if(grid > 20){
+    return `${1300 / grid}px`;
+  }
+  return `40px`;
+}
+
 // Req. 04
 function makePixelBoard(grid) {
   clearElementsPixelBoard();
@@ -85,8 +92,8 @@ function makePixelBoard(grid) {
     for (let column = 1; column <= grid; column += 1) {
       const newPixel = document.createElement('div');
       newPixel.className = 'pixel';
-      newPixel.style.width = '40px';
-      newPixel.style.height = '40px';
+      newPixel.style.width = sizePixel(grid);
+      newPixel.style.height = sizePixel(grid);
       pixels[line][column] = 'white';
       containerPixelBoard.appendChild(newPixel);
     }
