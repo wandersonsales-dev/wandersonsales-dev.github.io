@@ -73,6 +73,7 @@ main {
   padding: 30px;
   border: 1px solid var(--color-bg);
   margin: 40px auto;
+  border-radius: 10px;
 }
 
 #meme-image-container {
@@ -142,4 +143,26 @@ main {
   width: 70px;
   height: 100px;
   border: 3px solid var(--color-bg);
+}
+
+@media (max-width: 500px) {
+  #readyMemes {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+
+  #text-input {
+    width: 100%;
+  }
+
+  #meme-insert {
+    width: 100%;
+  }
 }
