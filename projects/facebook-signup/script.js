@@ -83,8 +83,10 @@ const validateForm = (e) => {
   e.preventDefault();
   let check = true;
   inputsText.forEach((el) => {
-    if (validTextField(el) === false) {
-      check = false;
+    if (el.id !== 'gender-custom') {
+      if (validTextField(el) === false) {
+        check = false;
+      }
     }
   });
   if (!validRadio()) {
@@ -99,17 +101,11 @@ const validateForm = (e) => {
 };
 
 function resetGender() {
-  if ((personalizedGender.innerHTML.length === 7)) {
-    const parentEle = personalizedGender;
-    const elem = document.createElement('input');
-    parentEle.appendChild(elem);
-    Object.assign(elem, {
-      name: genderCustomConst,
-      type: 'text',
-      placeholder: 'Gênero (opcional)',
-      id: genderCustomConst,
-    });
-  }
+  personalizedGender.style.display = 'flex';
+}
+
+const hideGenderField = () => {
+  personalizedGender.style.display = 'none';
 }
 
 window.onload = () => {
@@ -124,6 +120,8 @@ window.onload = () => {
     }
   });
   customGender.addEventListener('click', resetGender);
+  document.querySelector('#male').addEventListener('click', hideGenderField);
+  document.querySelector('#female').addEventListener('click', hideGenderField);
 };
 
 window.onresize = () => {
