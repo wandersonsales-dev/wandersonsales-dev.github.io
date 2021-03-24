@@ -124,8 +124,6 @@ window.onload = () => {
     }
   });
   customGender.addEventListener('click', resetGender);
-  document.getElementById('male').addEventListener('change', resetGender);
-  document.getElementById('female').addEventListener('change', resetGender);
 };
 
 window.onresize = () => {
