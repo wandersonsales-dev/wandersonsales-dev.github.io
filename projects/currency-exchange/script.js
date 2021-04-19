@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 const BASE_URL = 'https://api.currencyscoop.com/v1/latest';
-const API_KEY = 'c2f6f5a0fc52cb65d15aee370f9ee1c4';
+const API_KEY = '0bce980d94c4a755ba4d12e82bc577e8';
 
 const currencyObj = {
   currency: {},
@@ -72,18 +72,13 @@ const setCurrencyOperation = async () => {
 };
 
 const initLinks = () => {
-  const links = document.querySelectorAll('.menu a');
+  const links = document.querySelectorAll('.navbar-nav a');
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      if (e.target.className !== 'active') {
-        const l = document.querySelectorAll('.menu a');
-        l.forEach((el) => { el.className = ''; });
-        e.target.className = 'active';
-        currencyObj.base = e.target.outerHTML.substring(e.target.outerHTML
-          .indexOf('alt=') + 5).substring(0, 3);
-        setCurrencyOperation();
-      }
+      currencyObj.base = e.target.outerHTML.substring(e.target.outerHTML
+        .indexOf('alt=') + 5).substring(0, 3);
+      setCurrencyOperation();
     });
   });
 };
