@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 const BASE_URL = 'https://api.currencyscoop.com/v1/latest';
-const API_KEY = '0b1877752ae88c9776c1f0f0ffbd731f';
+const API_KEY = '40cacc90b0e493a5932ab99bdd7bbebf';
 
 const currencyObj = {
   currency: {},
