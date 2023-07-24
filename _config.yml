@@ -7,6 +7,7 @@ url: "https://the-mvm.github.io" # the base hostname & protocol for your site, e
 logo: "/assets/img/branding/MVM-logo-full.svg"
 logo-icon: "/assets/img/branding/MVM-symbol.svg"
 logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
+remote_theme: pages-themes/hacker@v0.2.0
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
@@ -87,6 +88,7 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
