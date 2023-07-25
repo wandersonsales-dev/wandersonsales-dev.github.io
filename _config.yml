@@ -1,10 +1,10 @@
 # Site settings
 title: WanCodeLab
 description: 'Bem-vindo ao "WanCodeLab: Explorando o Universo do Desenvolvimento de Software"!' # this means to ignore newlines until "baseurl:"
-permalink: ':title:output_ext'
+permalink: ":title:output_ext"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://wandersonsales-dev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/assets/img/branding/MVM-logo-full.svg"
+logo: "/assets/img/branding/WanCodeLab.svg"
 logo-icon: "/assets/img/branding/MVM-symbol.svg"
 logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
 
@@ -20,7 +20,7 @@ logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG f
 # the browser is closed or not)
 night_mode: "on"
 
-logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
+logo-dark: "/assets/img/branding/WanLogoLabDark-dark.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
@@ -34,9 +34,9 @@ phone: +55 (85) 99296-1219
 website: https://wandersonsales-dev.github.io
 linkedin: wandersonsales
 github: wandersonsales-dev
-twitter: ''
-bandcamp: ''
-stackoverflow: ''
+twitter: ""
+bandcamp: ""
+stackoverflow: ""
 
 # Newsletter
 mailchimp: ""
@@ -47,14 +47,14 @@ fbadmin: ar.maybach
 
 # Paginate
 paginate: 6
-paginate_path: 'page:num'
+paginate_path: "page:num"
 words_per_minute: 200
 
 extensions:
   mermaid_enable: true
 
 # Comments
-comments: utteranc  #[disqus, utteranc]
+comments: utteranc #[disqus, utteranc]
 comments_opts:
   comments_curtain: yes # leave empty to show the disqus embed directly
   repo: # The GitHub repo URL.  https://utteranc.es/
@@ -89,4 +89,12 @@ plugins:
   - jekyll-sitemap
 
 include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
+exclude:
+  [
+    "node_modules",
+    "gulpfile.js",
+    "package.json",
+    "yarn.lock",
+    "package-lock.json",
+    "assets/css/sass/",
+  ]
