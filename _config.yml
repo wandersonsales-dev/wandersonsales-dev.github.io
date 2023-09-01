@@ -25,7 +25,7 @@ highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code h
 
 # Author settings
 author: wan
-author-pic: Myself_Neon_grey.jpg
+author-pic: profile.jpeg
 about-author: Sou um desenvolvedor de software frontend apaixonado por criar experiências interativas e envolventes na web. Com um histórico sólido em desenvolvimento web e uma busca incessante por aprendizado contínuo, tenho desbravado o universo da programação com entusiasmo e determinação.
 
 # Contact links
@@ -37,6 +37,7 @@ github: wandersonsales-dev
 twitter: ""
 bandcamp: ""
 stackoverflow: ""
+medium: "wandersonsales.dev"
 
 # Newsletter
 mailchimp: ""
